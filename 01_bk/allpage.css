@@ -1,0 +1,761 @@
+@charset "UTF-8";
+/*レスポンシブサイズ設定*/
+/*レスポンシブサイズ設定*/
+/*----------------------------------------------------
+	基本設定
+----------------------------------------------------*/
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	color: #513c09;
+	background-color: #fff;
+	font-size: 12px;
+}
+@media only screen and (min-width: 600px) {
+	body {
+		padding-bottom: 102px;
+	}
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:over {
+ color: #333;
+}
+li {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6, h7, h8, ul, ol, li {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+@media only screen and (max-width: 599px) {
+.pc_only {
+	display: none !important;
+}
+}
+
+@media only screen and (min-width: 600px) {
+.sp_only {
+	display: none !important;
+}
+}
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+.base_inner {
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*clearfix*/
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+/*余白設定*/
+.pt10 {
+	padding-top: 10px;
+}
+.pt15 {
+	padding-top: 15px;
+}
+.pt20 {
+	padding-top: 20px;
+}
+.pt25 {
+	padding-top: 25px;
+}
+.pb10 {
+	padding-bottom: 10px;
+}
+.pb15 {
+	padding-bottom: 15px;
+}
+.pb20 {
+	padding-bottom: 20px;
+}
+.pb25 {
+	padding-bottom: 25px;
+}
+/*マージン*/
+.mt10 {
+	margin-top: 10px;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mt25 {
+	margin-top: 25px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.mb15 {
+	margin-bottom: 15px;
+}
+.mb20 {
+	margin-bottom: 20px;
+}
+.mb25 {
+	margin-bottom: 25px;
+}
+/*スタイルパーツ*/
+.inner_wrap {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 600px) {
+.inner_wrap {
+	max-width: 980px;
+}
+}
+
+@media only screen and (max-width: 599px) {
+.inner_wrap {
+	max-width: 980px;
+	width: 95%;
+}
+}
+
+@media only screen and (max-width: 599px) {
+span.br_sp {
+	display: block;
+}
+}
+
+@media only screen and (min-width: 600px) {
+span.br_pc {
+	display: block;
+}
+}
+.center {
+	text-align: center;
+}
+a:hover img.img_over {
+	opacity: 0.8;
+}
+/*moreボタン*/
+a.more_btn1 {
+	display: block;
+	margin: 0 auto 0;
+	text-align: center;
+	background-color: #513c09;
+	color: #fff;
+	font-size: 14px;
+}
+a.more_btn1:hover {
+	background-color: #957e48;
+}
+
+@media only screen and (min-width: 600px) {
+a.more_btn1 {
+	width: 275px;
+	height: 52px;
+	line-height: 52px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+}
+
+@media only screen and (max-width: 599px) {
+a.more_btn1 {
+	padding: 15px;
+	width: 55%;
+}
+a.more_btn1 img {
+	width: 90%;
+	height: auto;
+}
+}
+/*----------------------------------------------------
+	全体レイアウト
+----------------------------------------------------*/
+#head {
+	-js-display: flex;
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+#head {
+	width: 100%;
+	max-width: 980px;
+	padding: 15px 0;
+	margin: 0 auto;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#head {
+	border-bottom: solid 3px #f9c700;
+	width: 100%;
+}
+}
+#head .logo {
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 600px) {
+#head .logo {
+	width: 32%;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#head .logo {
+	width: 50%;
+}
+}
+#head .tel {
+	width: 26%;
+}
+#head .tel, #head .contact {
+	margin-left: auto;
+}
+#head .contact {
+	width: 29%;
+	-js-display: flex;
+	display: flex;
+	justify-content: space-between;
+}
+#head .contact li {
+	width: 49%;
+	text-align: right;
+}
+#head .toggle_menu {
+	margin-left: auto;
+	width: 15%;
+	display: block;
+}
+
+@media only screen and (min-width: 600px) {
+.head_nav {
+	background-color: #f9c700;
+	width: 100%;
+}
+}
+
+@media only screen and (min-width: 600px) {
+.head_nav ul {
+	max-width: 981px;
+	width: 100%;
+	margin: 0 auto;
+	-js-display: flex;
+	display: flex;
+}
+}
+.head_nav ul.mean-nav {
+	display: none;
+}
+.head_nav ul li a {
+	display: block;
+}
+
+@media only screen and (min-width: 600px) {
+.head_nav ul li a:hover {
+	background-color: #75510b;
+}
+}
+
+@media only screen and (max-width: 599px) {
+.head_nav ul li a {
+	padding: 15px;
+	font-size: 16px;
+	border-bottom: solid 1px #eee;
+}
+.head_nav ul li a:before {
+	content: '▶';
+	color: #FFCD00;
+	font-size: 12px;
+	margin-right: 10px;
+}
+}
+/*フッター*/
+#foot {
+	margin-top: 0;
+	//padding: 20px 0 0;
+	background-color: #FFF6C6;
+	position: relative;
+}
+#foot .go_top {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	display: block;
+}
+
+@media only screen and (min-width: 600px) {
+#foot .go_top {
+	width: 96px;
+	top: -47px;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#foot .go_top {
+	width: 48px;
+	top: -24px;
+}
+}
+
+@media only screen and (min-width: 600px) {
+#foot .inner {
+	-js-display: flex;
+	display: flex;
+	justify-content: space-between;
+}
+}
+#foot .inner .line1 {
+	margin-bottom: 20px;
+	-js-display: flex;
+	display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+#foot .inner .line1 {
+	width: 48%;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#foot .inner .line1 {
+	justify-content: space-between;
+}
+}
+#foot .inner .line1 .f_logo {
+	width: 40%;
+}
+
+@media only screen and (min-width: 600px) {
+#foot .inner .line1 .f_logo {
+	margin-right: 5%;
+}
+}
+#foot .inner .line1 .cominfo {
+	line-height: 1.7em;
+}
+
+@media only screen and (min-width: 600px) {
+#foot .inner .line1 .cominfo {
+	width: 50%;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#foot .inner .line1 .cominfo {
+	width: 56%;
+	font-size: 12px;
+}
+}
+#foot .inner .line2 {
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+#foot .inner .line2 {
+	-js-display: flex;
+	display: flex;
+	justify-content: space-between;
+	width: 48%;
+}
+}
+#foot .inner .line2 .map {
+	width: 50%;
+}
+
+@media only screen and (max-width: 599px) {
+#foot .inner .line2 .map {
+	float: left;
+}
+}
+#foot .inner .line2 .area {
+	line-height: 1.7em;
+}
+
+@media only screen and (min-width: 600px) {
+#foot .inner .line2 .area {
+	width: 50%;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#foot .inner .line2 .area {
+	float: right;
+	width: 47%;
+}
+}
+#foot .inner .line2 .foot_area_tit {
+	border-bottom: dotted 2px #7f7a62;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 599px) {
+#foot .inner .line2 .foot_area_tit img {
+	width: 50%;
+}
+}
+#foot .copy {
+	background: #513c09;
+	padding: 8px;
+	color: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#foot .footLinkBox {
+	padding: 20px 0 0;
+	background-color: #FFF6C6;
+	position: relative;
+}
+#foot .foot_link {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background-color: #fff;
+}
+#foot .foot_link .com_link {
+	-js-display: flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px) {
+#foot .foot_link .com_link {
+	padding-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#foot .foot_link .com_link {
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+}
+#foot .foot_link .com_link li {
+	text-align: center;
+}
+
+@media only screen and (max-width: 599px) {
+#foot .foot_link .com_link li {
+	width: 49%;
+	margin-bottom: 15px;
+}
+}
+
+@media only screen and (min-width: 600px) {
+#foot .foot_link .other_link {
+	-js-display: flex;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#foot .foot_link .other_link {
+	padding-bottom: 10px;
+}
+}
+
+@media only screen and (max-width: 599px) {
+#foot .foot_link .other_link li {
+	padding-bottom: 10px;
+}
+}
+
+/*回遊↓バナー*/
+@media only screen and (min-width: 600px) {
+.foot_btm_bnr {
+	background: url(../../images/common/bottom/bg_new.png);
+	padding: 7px 0;
+}
+}
+.foot_btm_bnr .inner {
+	max-width: 980px;
+	margin: auto;
+	-js-display: flex;
+	display: flex;
+	justify-content: space-between;
+	background-color:rgba(255,255,255,0.6);
+	padding: 10px 0 0 0;
+}
+
+@media only screen and (min-width: 600px) {
+.foot_btm_bnr .inner .tel {
+	width: 35%;
+	margin:-3px 0 0 10px;
+}
+.foot_btm_bnr .inner .raiten {
+	width: 31%;
+}
+.foot_btm_bnr .inner .contact {
+	width: 29%;
+}
+}
+
+@media only screen and (max-width: 599px) {
+	.foot_btm_bnr .inner {
+		background: url(../../images/common/bottom/bg1.png);
+		background-size: 30px;
+		padding:0;
+	}
+	.foot_btm_bnr .inner .raiten {
+		border-left: solid 1px #fff;
+		border-right: solid 1px #fff;
+	}
+}
+/*SP用回遊電話バナー*/
+.common_tel_bnr {
+	text-align: center;
+	width: 90%;
+	padding: 20px 0 20px;
+	margin: auto;
+	border-top: 4px dotted #fff77a;
+}
+@media only screen and (max-width: 599px) {
+	.kengaku_index_bnr + .common_tel_bnr {
+		border-top: none;
+	}
+}
+/*ハッピーホームについて*/
+.common_about {
+	margin-bottom: 0;
+	background-color: #fff;
+	//border-top: 4px dotted #fff77a;
+}
+
+@media only screen and (min-width: 600px) {
+.common_about > div {
+	max-width: 980px;
+	box-sizing: border-box;
+	margin: 0 auto 0;
+	padding-top: 20px;
+}
+}
+.common_about .t_tit {
+	background-color: #fff;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 599px) {
+.common_about .t_tit img {
+	max-width: 90%;
+	height: auto;
+}
+.common_about .t_tit {
+	margin-bottom: 4%;
+}
+
+}
+.common_about .bnr {
+	-js-display: flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+.common_about .bnr {
+	width: 94%;
+	max-width: 920px;
+}
+}
+.common_about .bnr li {
+	position: relative;
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	border: 1px solid #573909;
+}
+
+
+@media only screen and (min-width: 600px) {
+.common_about .bnr li {
+	max-width: 290px;
+	width: 32%;
+	height: 60px;
+}
+}
+
+@media only screen and (max-width: 599px) {
+	.common_about .bnr li {
+		width: 48%;
+		height: 59px;
+		font-size: 12px;
+
+	}
+}
+@media only screen and (max-width: 350px) {
+	.common_about .bnr li {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+}
+.common_about .bnr li a {
+	display: block;
+
+	background-color: transparent;
+}
+.common_about .bnr li a:hover {
+	background-color: #ddce7f;
+}
+.common_about .bnr li::after {
+	content: url(../../images/common/about_arrow.png);
+	position: absolute;
+	top: 50%;
+	right: 14px;
+	transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 600px) {
+	.common_about .bnr li a {
+		display: block;
+		line-height: 60px;
+		//vertical-align: middle;
+		//margin: -5.5em 0;
+		//padding: 6.5em 5px;
+	}
+	}
+
+	@media only screen and (max-width: 599px) {
+	.common_about .bnr li a {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		//height: 59px;
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		//margin: -4em 0;
+		//padding: 5em 10px;
+	}
+	.common_about .bnr li a:hover {
+		background: transparent;
+	}
+	.common_about .bnr li:hover {
+		background-color: #ddce7f;
+	}
+	.common_about .bnr li:nth-of-type(4) span {
+		display: block;
+		text-align: center;
+	}
+	.common_about .bnr li:nth-of-type(4) a {
+		line-height: 1.4;
+	}
+	.common_about .bnr li::after {
+		right: 6px;
+	}
+}
+#footer_fixed {
+	width: 100%;
+	position: fixed !important;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+}
+/* Reset Style */
+html {
+	overflow-y: scroll;
+}
+body {
+	line-height: 1;
+	font-size: 12px;
+}
+/* html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark */
+/* line 20, ../sass/_reset.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, p, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+nav ul, ul, ol {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+  /* border-collapse: collapse;
+  border-spacing: 0; 
+*/}
+
+
+hr {
+ display: block;
+ height: 1px;
+ border: 0;
+ border-top: 1px solid #cccccc;
+ margin: 1em 0;
+ padding: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
